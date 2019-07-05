@@ -1,6 +1,6 @@
 # Home Assistant GMAPS
 The Home Assistant Google Maps Device Tracker, updated to use LocationSharingLib 4.0.1
-The is a mostly drop-in replacement for the google_maps component, using the newer 4.0.1 Location Sharing Lib from [@costasf] (https://github.com/costastf)
+The is a mostly drop-in replacement for the google_maps component, using the newer 4.0.1 Location Sharing Lib from [@costasf](https://github.com/costastf)
 The biggest change is that you now have to fetch the cookie yourself and put it into your configuration directory.  To get the cookie, see https://github.com/costastf/mapscookiegettercli.
 
 ## Installation
@@ -28,6 +28,8 @@ If you have been using the google_maps component, you already have this file and
 
 The reason for the new scan_interval configuration variable is that checking every 30 seconds seemed to be irritating Google's servers which would then start rejecting my queries.
 ## Resources
+[mapscookiegettercli](https://github.com/costastf/mapscookiegettercli)
+
 [locationsharinglib](https://github.com/costastf/locationsharinglib)
 
-[HASS google_maps component] (https://www.home-assistant.io/components/google_maps/)
+[HASS google_maps component](https://www.home-assistant.io/components/google_maps/)

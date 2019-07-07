@@ -1,6 +1,6 @@
 # Home Assistant GMAPS
 The Home Assistant Google Maps Device Tracker, updated to use LocationSharingLib 4.0.1
-The is a mostly drop-in replacement for the google_maps component, using the newer 4.0.1 Location Sharing Lib from [@costasf](https://github.com/costastf)
+This is a mostly drop-in replacement for the google_maps component, using the newer 4.0.1 Location Sharing Lib from [@costasf](https://github.com/costastf).
 The biggest change is that you now have to fetch the cookie yourself and put it into your configuration directory.  To get the cookie, see https://github.com/costastf/mapscookiegettercli.
 
 ## Installation
@@ -11,7 +11,7 @@ device_tracker:
   - platform: gmaps
     username: YOUR_USERNAME
 ```
-Get the cookie using the mapscookiegetter.  It will create a file named location_sharing.cookies which needs to be renamed and moved to your configuration directory.  Rename the file using a slugified version of your username (email address) like this:
+The password is no longer used since you authenticate on your own. Get the cookie using the mapscookiegetter.  It will create a file named location_sharing.cookies which needs to be renamed and moved to your configuration directory.  Rename the file using a slugified version of your username (email address) like this:
 
 **.google_maps_location_sharing.cookies.your_username_gmail_com**
 

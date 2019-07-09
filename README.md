@@ -24,7 +24,7 @@ If you have been using the google_maps component, you already have this file and
 | platform         | true     | string  | 'gmaps'                                                                           |
 | username         | true     | string  | The email address for the Google account that has access to your shared location. |
 | max_gps_accuracy | false    | float   | filter false GPS reports. Defaults to 100km                                       |
-| scan_interval    | false    | float   | The minumum number of seconds between queries. Defaults to 60 seconds             |
+| scan_interval    | false    | float   | The minimum number of seconds between queries. Defaults to 60 seconds             |
 
 The reason for the new scan_interval configuration variable is that checking every 30 seconds seemed to be irritating Google's servers which would then start rejecting my queries.
 ## Resources

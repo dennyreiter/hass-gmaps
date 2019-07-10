@@ -20,7 +20,9 @@ device_tracker:
 ```
 (The password is no longer used since you authenticate on your own when creating the cookie.)
 
-3. Get the cookie using the [mapscookiegetter](https://github.com/costastf/mapscookiegettercli).  It will create a file named **location_sharing.cookies** which needs to be renamed and moved to your configuration directory.  Rename the file using a slugified version of the username (email address) in the configuration. For example, if the username is example@gmail.com:
+3. Get the cookie using the [mapscookiegetter](https://github.com/costastf/mapscookiegettercli).  It will create a file named **location_sharing.cookies** which needs to be renamed and moved to your configuration directory. You might also be able to use the [cookies.txt Chrome extenstion](https://chrome.google.com/webstore/detail/cookiestxt/njabckikapfpffapmjgojcnbfjonfjfg), but I have not tried it. 
+
+4. Rename the file using a slugified version of the username (email address) in the configuration. For example, if the username is example@gmail.com:
 
 **.google_maps_location_sharing.cookies.example_gmail_com**
 

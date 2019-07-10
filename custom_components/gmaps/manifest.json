@@ -3,7 +3,7 @@
   "name": "Google maps",
   "documentation": "https://github.com/dennyreiter/hass-gmaps",
   "requirements": [
-    "locationsharinglib==4.0.1"
+    "locationsharinglib==4.0.2"
   ],
   "dependencies": [],
   "codeowners": ["@dennyreiter"]

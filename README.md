@@ -4,16 +4,25 @@ This is a mostly drop-in replacement for the google_maps component, using the ne
 The biggest change is that you now have to fetch the cookie yourself and put it into your configuration directory.  To get the cookie, see https://github.com/costastf/mapscookiegettercli.
 
 ## Installation
-1. Copy the `gmaps` folder to the `custom_components` folder in your Home Assistant configuration directory.
+1. Copy the `gmaps` folder to the `custom_components` folder in your Home Assistant configuration directory:
+```
+/home/homeassistant/
+├── .homeassistant
+│   ├── custom_components
+│   │   └── gmaps
+
+```
 2. Add the following code in your `configuration.yaml` file, or modify your google_maps configuration:
 ```
 device_tracker:
   - platform: gmaps
     username: YOUR_USERNAME
 ```
-The password is no longer used since you authenticate on your own. Get the cookie using the mapscookiegetter.  It will create a file named location_sharing.cookies which needs to be renamed and moved to your configuration directory.  Rename the file using a slugified version of your username (email address) like this:
+(The password is no longer used since you authenticate on your own when creating the cookie.)
 
-**.google_maps_location_sharing.cookies.your_username_gmail_com**
+3. Get the cookie using the [mapscookiegetter](https://github.com/costastf/mapscookiegettercli).  It will create a file named **location_sharing.cookies** which needs to be renamed and moved to your configuration directory.  Rename the file using a slugified version of the username (email address) in the configuration. For example, if the username is example@gmail.com:
+
+**.google_maps_location_sharing.cookies.example_gmail_com**
 
 If you have been using the google_maps component, you already have this file and you can just copy the new cookie over it.
 

@@ -26,7 +26,7 @@ device_tracker:
 
 **.google_maps_location_sharing.cookies.example_gmail_com**
 
-If you have been using the google_maps component, you already have this file and you can just copy the new cookie over it.
+If you have been using the google_maps component, you already have a file by this name and you can just copy the new cookie over it.
 
 
 ## Configuration

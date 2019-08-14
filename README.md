@@ -1,4 +1,7 @@
 # Home Assistant GMAPS
+
+**THIS IS NOW DEPRECATED AS IT HAS BEEN INTEGRATED INTO HOME ASSISTANT AS OF 0.97**
+
 The Home Assistant Google Maps Device Tracker, updated to use LocationSharingLib 4.0.1
 This is a mostly drop-in replacement for the google_maps component, using the newer 4.0.1 Location Sharing Lib from [@costasf](https://github.com/costastf).
 The biggest change is that you now have to fetch the cookie yourself and put it into your configuration directory.  To get the cookie, see https://github.com/costastf/mapscookiegettercli.
